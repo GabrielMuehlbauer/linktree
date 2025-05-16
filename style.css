@@ -76,7 +76,7 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-out 0.2s;
+  animation: slide-back 0.2s;
 }
 
 switch button:hover {
@@ -113,15 +113,17 @@ ul li a {
   padding: 16px 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-  border-radius: 8px;
+  border-radius: 20px;
   -webkit-background-filter: blur(4px);
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s;
+  transition: border-radius 0.2s ease-in-out;
 }
 
 ul li a:hover {
   background: var(--surface-color-hover);
+  border-radius: 30px;
   border: 1.5px solid var(--text-color);
 }
 
